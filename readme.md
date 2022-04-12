@@ -1,13 +1,13 @@
 ## First Party Cookie
 
-**El código está optimizado para GTM en una etiqueta HTML ECMA5**
+**El código está optimizado para GTM en una etiqueta HTML ES5**
 
 Lo utilizaremos en GTM en una etiqueta HTML y un activador con el DOM cargado
 
 Este snipet se ha creado para poder recoger un dato desde una URL que genera un campo aleatorio y guardarlo como una "cookie temporal".
 
 ```javascript
-var urlCookie = document.location.href // capturamos la URL
+var urlCookie = document.location.href // Capturamos la URL
 if (urlCookie.includes("cjevent")) { //Verificamos si la URL contiene ese parámetro para inicializar el resto del código.
   var cutCookie = (urlCookie.split('&')) // Cortamos la URL por el símbolo &
   for (var i = 0; i < cutCookie.length; i++) { // Recorremos el Array 
